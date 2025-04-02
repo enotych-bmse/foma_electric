@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    background: #fff;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 400px;
+}
+
+/* Box Model */
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+.header {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.header-text {
+    margin-left: 40px;
+}
+
+.header-text h1 {
+    color: #a40000;
+}
+
+.header-avatar {
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info {
+    margin-bottom: 40px;
+}
+
+.info-video {
+    width: 400px;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #86898f;
+    color: #fff;
+}
+
+/* .bg-card {
+    background: #ff4f00;
+} */
+
+.card-king {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* background: black;
+    color: #fff; */
+    background: #a40000;
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+    margin: 5px 0;
+    /* border: 1px solid white; */
+    padding: 5px 0;
+    color: black;
+}
+
+.logo-video {
+    margin: 0;
+    /* border: 1px solid white; */
+    padding: 0;
+    color: black;
+}
+
+.list {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.list li {
+    /* color: aquamarine; */
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid #ff4f00; */
+    padding-bottom: 5px;
+}
+
+.examples > div {
+    margin: 10px;
+    padding: 5px;
+    /* border: 2px dashed red; */
+}
+
+.example-2 {
+    display: flex;
+}
+
+.example-2-2 {
+    margin-left: 10px;
+}
+
+.img {
+    width: 200px;
+    padding: 1px;
+    border: 1px solid #fff;
+}
+
+a {
+    /* color: #fa9b03; */
+    /* color: green; */
+    color: #a40000;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
