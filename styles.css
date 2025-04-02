@@ -46,7 +46,11 @@ body {
 }
 
 .info-video {
-    width: 400px;
+    width: 90%;
+    margin: 20px 5%;
+    /* border: 1px solid white; */
+    padding: 1%;
+
 }
 
 .card {
