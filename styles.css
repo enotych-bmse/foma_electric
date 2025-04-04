@@ -18,19 +18,34 @@ body {
 .container {
     max-width: 80%;
     margin: auto;
+    
 }
 
 /* header */
 .header {
-    margin-bottom: 100px;
-    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    /* border: 2px dotted red; */
+}
+
+.header-text {
+    text-align: center;
 }
 
 .header-text h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 650%;
+    text-shadow: 5px 5px  5px #d4af37;
+    letter-spacing: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.header-text h2 {
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 
 /* main */
@@ -40,7 +55,6 @@ body {
 
 .info {
     margin-bottom: 40px;
-    /* border: 2px dotted red; */
 }
 
 .logo {
@@ -49,63 +63,65 @@ body {
     padding: 5px 0;
 }
 
-.services {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.card-king {
+    padding: 15px 20px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    border: 1px solid #d4af37;
 }
 
-.instrument {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.info h2 {
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
-.mission {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.info > div > h4 {
+    padding-top: 15px;
 }
 
-.garancy {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.info > div > p {
+    margin-top: 5px;
 }
 
-.why-i {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.card {
+    margin-bottom: 160px;
 }
 
-.examples {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.examples-flex {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 3;
+}
+
+.examples-flex > div {
+    flex: 1;
 }
 
 .examples > div {
-    margin: 10px;
-    padding: 5px;
+    margin: 10px 0 20px 0;
+    padding: 5px 0 5px 0;
 }
-
-.example-1 {
-    /* border: 2px dotted red; */
-}
-
 
 .example-2 {
     display: flex;
-    /* border: 2px dotted red; */
 }
 
 .example-2-2 {
     margin-left: 10px;
 }
 
-.example-3 {
-    /* border: 2px dotted red; */
+.instrument-flex {
+    display: flex;
+    gap: 10px;
 }
 
-/*  */
-.feedback {
-    /* border: 2px dotted red; */
-    margin-bottom: 40px;
+.instrument-flex > div {
+    flex: 1;
+}
+
+.instrument-flex > div > h4 p ol {
+    display: block;
 }
 
 /* footer */
@@ -153,14 +169,20 @@ a:visited {
     color: purple;
 }
 
-.h {
+.all-h {
     font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 10px;
+}
+
+.menu-h {
+    text-decoration: underline 4px #d4af37;
+    letter-spacing: 2px;
 }
 
 .img {
     width: 200px;
     padding: 1px;
-    border: 1px solid #fff;
+    border: 1px solid #d4af37;
     border-radius: 5px;
 }
 
