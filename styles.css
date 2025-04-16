@@ -169,16 +169,20 @@ body {
 
 .f-cl-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* 1fr; */
     gap: 10px;
     width: 20%;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.f-cl-number {
-    margin-top: 20px;
+.f-cl-grid-el p {
+    font-size: 120%;
 }
+
+/* .f-cl-number {
+    margin-top: 20px;
+} */
 
 .f-cl-img-a {
     width: 47px;
