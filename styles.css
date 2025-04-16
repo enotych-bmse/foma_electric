@@ -21,7 +21,7 @@ body {
     
 }
 
-/* header */
+/* ============ header */
 .header {
     height: 100vh;
     display: flex;
@@ -48,7 +48,7 @@ body {
     word-spacing: 4px;
 }
 
-/* main */
+/* ============ main */
 .main {
     margin: 0 5%;
 }
@@ -87,14 +87,14 @@ body {
     margin-bottom: 160px;
 }
 
-/* instrument */
+/* ============ instrument */
 .instrument-grid {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
 
-/* examples */
+/* ============ examples */
 .examples-grid {
     display: grid;
     gap: 20px;
@@ -117,7 +117,7 @@ body {
     text-align: center;
 }
 
-/* feedback */
+/* ============ feedback */
 .fb-grid {
     display: grid;
     gap: 20px;
@@ -146,7 +146,7 @@ body {
     margin: 16px 16px;
 }
 
-/* footer */
+/* ============ footer */
 .footer {
     background: #4a4a4a;
     color: #f5f5f5;
@@ -158,12 +158,29 @@ body {
     padding: 10px 0 50px 0;
 }
 
-.contacts-links {
-    margin-top: 20px;
+.contacts h2 {
+    margin-bottom: 30px;
+}
+
+.f-contacts-links {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.img-a {
+.f-cl-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.f-cl-number {
+    margin-top: 20px;
+}
+
+.f-cl-img-a {
     width: 47px;
 }
 
@@ -171,7 +188,12 @@ body {
     padding-bottom: 2px;
 }
 
-/* common tags */
+.f-d-tg {
+    color: inherit;
+    font-weight: 100;
+}
+
+/* ============ common tags */
 a {
     color: #93ccea;
     font-weight: 700;
