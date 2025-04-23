@@ -1,4 +1,38 @@
-/* ====================== */
+/* ======================== */
 /* UI-Kit для Foma Electric */
-/* ====================== */
+/* ======================== */
 
+
+/* ============ COLORS ============ */
+
+:root {
+    --primary-color: #333333;
+    --secondary-color: #d4af37;
+    --text-color: #f5f5f5;
+    --list-underline: #4a4a4a;
+}
+
+/* ============ FONTS ============ */
+
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --headers-font: "Montserrat Alternates", sans-serif;
+    --logo-font: "Orbitron", sans-serif;
+}
+
+/* ============ FONTS WEIGHT ============ */
+
+:root {
+    --primary-weight: 200;
+    --header-weight: 300;
+}
+
+/* ============ FONTS SIZES ============ */
+
+html {font-size: 16px;}
+body {font-size: 1rem;}
+h1 {font-size: 7rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.2rem;}
+h5 {font-size: 1rem;}
