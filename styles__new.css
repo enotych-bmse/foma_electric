@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --border-radius: 20px;
     --border-gold: 1px solid #d4af37;
 }
 
@@ -78,18 +77,25 @@ h2, h3, h4, h5 {
 .header__h1 {
     font-family: var(--logo-font);
     text-shadow: 5px 5px 5px var(--secondary-color);
-    letter-spacing: 10px;
+    letter-spacing: 0.6rem;
 }
 
 .info {
     padding: 2rem;
-    border-radius: var(--border-radius);
     border: var(--border-gold);
 }
 
 .instrument__grid {grid-template-columns: 1fr 1fr;}
 
 .examples__grid {grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+.examples__img {
+    width: 100%;
+    padding: 1px;
+    border: var(--border-gold);
+    border-radius: 5px;
+
+}
 
 
 /* ============ ADAPTATION ============ */
