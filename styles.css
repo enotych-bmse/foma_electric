@@ -2,6 +2,8 @@
 
 :root {
     --border-color: 1px solid var(--secondary-color);
+    --container-padding: 1rem;
+    --container-max-width: 1200px;
 }
 
 /* ============ GENERAL CLASSES ============ */
@@ -73,15 +75,10 @@ body {
 }
 
 .container {
-    max-width: 80%;
-    margin: auto;
-}
-
-h2, h3, h4, h5 {
-    font-family: var(--headers-font);
-    font-weight: var(--header-weight);
-    letter-spacing: 0.1rem;
-    text-align: center;
+    width: min(100% - 2 * var(--container-padding), var(--container-max-width));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .header {
@@ -109,11 +106,11 @@ h2, h3, h4, h5 {
     border: var(--border-color);
 }
 
-.instrument__grid, .contacts__links__grid {grid-template-columns: 1fr 1fr;}
+.contacts__links__grid {grid-template-columns: 1fr 1fr;}
 
-.examples__grid {grid-template-columns: 1fr 1fr 1fr 1fr;}
-
-.feedback__grid {grid-template-columns: 1fr 1fr 1fr;}
+.examples__grid, .instrument__grid, .feedback__grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 .examples__img, .examples__link, .feedback__card, .feedback__link {
     width: 100%;
@@ -147,15 +144,26 @@ li {
     padding-bottom: 0.3rem;
 }
 
-/* ============ ADAPTATION ============ 
+/* ============ ADAPTATION ============ */
 
+/* Планшеты и небольшие ноутбуки */
+@media (max-width: 1024px) {
+    html { font-size: 15px; }
+    .container { max-width: 90%; }
+}
+
+/* Планшеты (портретный режим) */
 @media (max-width: 768px) {
-    html {font-size: 17px;}
+    html { font-size: 14px; }
+    .container { max-width: 95%; }
+    .header__h1 { font-size: 4rem; }
+    .examples__grid { grid-template-columns: 1fr 1fr; }
 }
 
+/* Смартфоны */
 @media (max-width: 480px) {
-    html {font-size: 18px;}
-    .header {flex-direction: column;}
-    .grid {grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+    html { font-size: 13px; }
+    .container { max-width: 95%; }
+    .header__h1 { font-size: 3rem; letter-spacing: 0.3rem; }
+    .examples__grid, .feedback__grid { grid-template-columns: 1fr; }
 }
-*/

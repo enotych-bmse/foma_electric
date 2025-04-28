@@ -21,6 +21,13 @@
     --logo-font: "Orbitron", sans-serif;
 }
 
+h2, h3, h4, h5 {
+    font-family: var(--headers-font);
+    font-weight: var(--header-weight);
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
 /* ============ FONTS WEIGHT ============ */
 
 :root {
@@ -32,8 +39,8 @@
 
 html {font-size: 16px;}
 body {font-size: 1rem;}
-h1 {font-size: 7rem;}
+h1 {font-size: clamp(2.5rem, 10vw, 7rem);} /* От 2.5rem до 7rem, с динамическим изменением */
 h2 {font-size: 2rem;}
-h3 {font-size: 2rem;}
+h3 {font-size: 1.8rem;}
 h4 {font-size: 1.2rem;}
 h5 {font-size: 1rem;}
