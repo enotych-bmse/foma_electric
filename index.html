@@ -13,11 +13,14 @@
 
         <meta name="author" content="Mikhail Aleksandrov">
         <meta name="theme-color" content="#333333">
-        <link rel="icon" href="favicon.ico">
 
         <meta name="format-detection" content="telephone=yes">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="styles.css" rel="stylesheet" />
+        <link href="ui-kit.css" rel="stylesheet">
+        <link href="favicon.ico" rel="icon">
 
     </head>
 
@@ -25,23 +28,23 @@
         <div class="container">
 
             <header class="header">
-                <div class="header-text">
-                    <h1>FOMA electric</h1>
-                    <h2 class="all-h">Электромонтажные работы премиум-класса</h2>
+                <div class="header__logo text-align-center">
+                    <h1 class="header__h1">FOMA electric</h1>
+                    <h2 class="header__h2 letter-spacing-2 word-spacing-4">Электромонтажные работы премиум-класса</h2>
                 </div>
             </header>
 
-            <main class="main">
-                <div class="info card-king">
-                    <h2 class="logo info-h2">Обо мне</h2>
-                    <p class="info-p-1">
+            <main class="main margin-0-5p">
+                <section class="info margin-bottom-160 border-radius-20">
+                    <h3 class="info__h3 margin-bottom-48 margin-top-10">Обо мне</h3>
+                    <p class="info__p1">
                         Привет! Меня зовут Илья Фомин, и я занимаюсь электромонтажными работами. 
                         Мой бренд называется «FOMA Electric». 
                         Для меня качество работы важнее количества заказов.
                     </p>
-                    <div class="info-1-part">
-                        <h4 class="info-h4">Как я пришел в профессию</h4>
-                        <p class="info-p-2">
+                    <div class="info__item">
+                        <h4 class="info__h4">Как я пришел в профессию</h4>
+                        <p class="info__p2">
                             Всё началось с ремонта в моей квартире.
                             Вызванный мастер назвал высокую цену, и я решил попробовать сделать всё сам.
                             После успешного завершения ремонта я поступил на обучение по специальности
@@ -49,9 +52,9 @@
                             Год обучения принёс множество знаний и опыта, закончил я его с отличием.
                         </p>
                     </div>
-                    <div class="info-2-part">
-                        <h4 class="info-h4">После выпуска</h4>
-                        <p class="info-p-2">
+                    <div class="info__item">
+                        <h4 class="info__h4">После выпуска</h4>
+                        <p class="info__p2">
                             После выпуска стоял выбор: 
                             устроиться на завод с фиксированным окладом или работать на себя.
                             Я выбрал второй путь. Не смотря на сложности, я брался за любую работу. 
@@ -60,30 +63,30 @@
                             при работе с заказчиками.
                         </p>
                     </div>
-                </div>
+                </section>
         
-                <div class="services card">
-                    <h2 class="logo all-h menu-h">Услуги</h2>
-                    <ol class="services-list ol">
+                <section class="services margin-bottom-160">
+                    <h3 class="services__h3">Услуги</h3>
+                    <ol class="services__ol">
                         <li>Электрика</li>
                         <li>Умный дом</li>
                     </ol>
-                </div>
+                </section>
 
-                <div class="instrument card">
-                    <h2 class="logo all-h menu-h">Инструмент</h2>
-                    <div class="instrument-grid">
-                        <div class="i-f-one">
-                            <h4 class="logo all-h">Начало пути</h4>
-                            <p>Мой стартовый набор</p>
-                            <ol class="instrument-list ol">
+                <section class="instrument margin-bottom-160">
+                    <h3 class="instrument__h3 margin-bottom-48">Инструмент</h3>
+                    <div class="instrument__grid grid">
+                        <div class="instrument__grid__item">
+                            <h4 class="instrument__h4">Начало пути</h4>
+                            <ol class="instrument__ol">
                                 <li>Перфоратор Вихрь (5 000 руб.)</li>
                                 <li>УШМ Интерскол (2 500 руб.)</li>
                                 <li>Коронка Bosch (6 500 руб.)</li>
                             </ol>
                         </div>
-                        <div class="i-f-two">
-                            <h4 class="logo all-h">Современный арсенал</h4>
+
+                        <div class="instrument__grid__item">
+                            <h4 class="instrument__h4">Современный арсенал</h4>
                             <p>
                                 В настоящий момент я располагаю широким набором инструментов 
                                 для различных задач, что позволяет предоставлять максимальный сервис 
@@ -91,205 +94,204 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mission card">
-                    <h2 class="logo all-h menu-h">Главные принципы</h2>
-                    <ol class="services-list ol">
+                <section class="ideas margin-bottom-160">
+                    <h3 class="ideas__h3 margin-bottom-48">Главные принципы</h3>
+                    <ol class="ideas__ol">
                         <li>Качество – мой главный приоритет.</li>
                         <li>Я предпочитаю потратить больше времени на работу, чем делать её "на отмах".</li>
                     </ol>
-                </div>
+                </section>
     
-                <div class="garancy card">
-                    <h2 class="logo all-h menu-h">Гарантия</h2>
-                    <p>Предоставляю гарантию 3 года на все электромонтажные работы. Почему?</p>
-                    <ol class="services-list ol">
+                <section class="garancy margin-bottom-160">
+                    <h3 class="garancy__h3 margin-bottom-48">Гарантия</h3>
+                    <h5 class="garancy__h3 margin-bottom-32">Предоставляю гарантию 3 года на все электромонтажные работы. Почему?</h5>
+                    <ol class="garancy__ol">
                         <li>Использование качественных материалов</li>
                         <li>Аккуратность выполнения</li>
                         <li>Правильный расчёт компонентов</li>
                     </ol>
-                </div>
+                </section>
 
-                <div class="why-i card">
-                    <h2 class="logo all-h menu-h">Почему стоит выбрать мои услуги</h2>
-                    <ol class="why-i-list ol">
-                        <li>Эксклюзивность</li>
-                            <ul class="ul">
+                <section class="choise margin-bottom-160">
+                    <h3 class="choise__h3 margin-bottom-48">Почему стоит выбрать мои услуги</h3>
+                    <ol class="choise__ol">
+                        <li style="border-bottom: none; font-weight: 300;">Эксклюзивность</li>
+                            <ul class="choise__ul margin-bottom-48">
                                 <li>Индивидуальный подход к каждому объекту</li>
                                 <li>Учет всех пожеланий заказчика</li>
                             </ul>
-                        <li>Эстетика</li>
-                            <ul class="ul">
+                        <li style="border-bottom: none; font-weight: 300;">Эстетика</li>
+                            <ul class="choise__ul margin-bottom-48">
                                 <li>Аккуратное выполнение работ</li>
                                 <li>Минимизация ошибок</li>
                             </ul>
-                        <li>Эргономика</li>
-                            <ul class="ul">
+                        <li style="border-bottom: none; font-weight: 300;">Эргономика</li>
+                            <ul class="choise__ul margin-bottom-48">
                                 <li>Проработка каждого проекта с учетом эксплуатации</li>
                             </ul>
-                        <li>Безопасность</li>
-                            <ul class="ul">
+                        <li style="border-bottom: none; font-weight: 300;">Безопасность</li>
+                            <ul class="choise__ul">
                                 <li>Соответствие всем нормам и стандартам электробезопасности</li>
                                 <li>Тщательная проверка всех соединений и компонентов</li>
                                 <li>Гарантия надежной и безопасной эксплуатации в течение всего гарантийного срока</li>
                             </ul>
                     </ol>
-                </div>
+                </section>
 
-                <div class="examples card">
-                    <h2 class="logo all-h menu-h">Примеры работ</h2>
-                    <div class="examples-grid">
+                <section class="examples margin-bottom-160">
+                    <h3 class="examples__h3 margin-bottom-48">Примеры работ</h3>
+                    <div class="examples__grid grid">
                         <!-- размер фото: 3х4 или 4х3 -->
-                        <div class="example">
-                            <img src="Щиток.jpg" alt="Щиток" class="img">
+                        <div class="examples__grid__item">
+                            <img src="Щиток.jpg" class="examples__img">
                             <p>Электрический щит</p>
                         </div>
 
-                        <div class="example">
-                            <img src="Монтаж щитка.JPG" alt="Проводка" class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="Монтаж щитка.JPG" class="examples__img border-radius-5">
                             <p>Монтаж щита</p>
                         </div>
 
-                        <div class="example">
-                            <img src="До.jpg" alt="До работы"class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="До.jpg" class="examples__img border-radius-5">
                             <p>Пересборка щита (до)</p>
                         </div>
             
-                        <div class="example">
-                            <img src="После.jpg" alt="После работ"class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="После.jpg" class="examples__img border-radius-5">
                             <p>Пересборка щита (после)</p>
                         </div>
 
-                        <div class="example">
-                            <img src="Процесс1.jpg" alt="Монтаж" class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="Процесс1.jpg" class="examples__img border-radius-5">
                             <p>Врезание розеток</p>
                         </div>
 
-                        <div class="example">
-                            <img src="Процесс2.jpg" alt="Монтаж" class="img">
-                            <p>Штробление</p>
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="Процесс2.jpg" class="examples__img border-radius-5">
+                            <p>Штробление стен</p>
                         </div>
 
-                        <div class="example">
-                            <img src="Процесс3.jpg" alt="Монтаж" class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="Процесс3.jpg" class="examples__img border-radius-5">
                             <p>Разметка стен</p>
                         </div>
 
-                        <div class="example">
-                            <img src="Процесс4.jpg" alt="Монтаж" class="img">
+                        <div class="examples__grid__item border-radius-5">
+                            <img src="Процесс4.jpg" class="examples__img border-radius-5">
                             <p>Монтаж кабелей</p>
                         </div>
 
                     </div>
 
-                    <div class="example-link">
-                        <a href="https://t.me/Foma_El" target="_blank">Больше примеров работ</a>
+                    <div class="examples__more margin-top-48 text-align-center">
+                        <a href="https://t.me/Foma_El" target="_blank" class="examples__link link">Больше примеров работ</a>
                     </div>
                     
-                </div>
+                </section>
         
-                <div class="feedback card">
-                    <h2 class="logo all-h menu-h">Отзывы</h2>
-                    <div class="fb-grid">
-                        <div class="fb-card">
+                <section class="feedback margin-bottom-160">
+                    <h3 class="feedback__h3 margin-bottom-48">Отзывы</h3>
+                    <div class="feedback__grid grid">
+                        <div class="feedback__card">
                             <h5>Наталья Винорадова</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Илья настолько всё сделал аккуратно ни грязи, ни пыли не было, хотя пришлось штробить стену. 
                                 И это всё было сделано на чистовом ремонте. 
-                                Мастрерски раскрыл обои,сделал штробу, проложил кабель, заделал -- и красота!! 
+                                Мастрерски раскрыл обои, сделал штробу, проложил кабель, заделал - и красота!! 
                                 Все чисто и аккуратно и никаких "соплей" из проводов. Мы очень довольны и теперь хотим полностью заменить проводку!!!
                             </p>
                         </div>
 
-                        <div class="fb-card">
+                        <div class="feedback__card">
                             <h5>Юлия Степанова</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Спасибо большое Илье, профессиональный подход! 
-                                Делает всё качественно,исправил то,что было возможно исправить. 
-                                Проводка у нас в доме очень старая и потребуется полная замена-но такому мастеру можно доверять!!!!!
+                                Делает всё качественно, исправил то, что было возможно исправить. 
+                                Проводка у нас в доме очень старая, и потребуется полная замена - такому мастеру можно доверять!!!!!
                             </p>
                         </div>
 
-                        <div class="fb-card">
+                        <div class="feedback__card">
                             <h5>Grigory Laptev</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Не первый год работаю с Ильей. Крайне профессиональный подход к делу.
                                 Приятно доверить такой важный и сложный вопрос, как электрика, такому мастеру. 
                                 Рекомендую обращаться к Илье, если необходимо выполнить работы по электрике, как глобальные, так и локальные.
                             </p>
                         </div>
 
-                        <div class="fb-card">
+                        <div class="feedback__card">
                             <h5>Елена</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Я очень довольна работой Ильи, он установил нам потолочный светильник. 
                                 Всё сделано быстро и профессионально. Рекомендую!
                             </p>
                         </div>
 
-                        <div class="fb-card">
+                        <div class="feedback__card">
                             <h5>Екатерина</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Выражаю благодарность Илье всегда за качественную профессиональную работу. 
-                                Обращаемся уже в третий раз и как всегда все четко ,быстро. 
-                                Рекомендую его всегда кто хочет найти грамотного специалиста по электрике и не только! 
+                                Обращаемся уже в третий раз, и как всегда все чётко, быстро. 
+                                Рекомендую его всегда, кто хочет найти грамотного специалиста по электрике и не только! 
                                 Илья, успехов Вам в вашей профессии!!!
                             </p>
                         </div>
 
-                        <div class="fb-card">
+                        <div class="feedback__card">
                             <h5>Лидия Егорова</h5>
                             <hr>
-                            <p>
+                            <p class="text-align-justify margin-16">
                                 Менял проводку на кухне. 
                                 Работа была сложная в труднодоступных местах. 
                                 Сделано все шикарно, аккуратно, в оговариваемые сроки и деньги. 
-                                Очень довольны! Обязательно будем обращаться еще!
+                                Очень довольны! Обязательно будем обращаться ещё!
                             </p>
                         </div>
                     </div>
 
-                    <div class="fb-link">
+                    <div class="feedback__more margin-top-48 text-align-center">
                         <p>Ознакомиться с отзывами более подробно или оставить свой можно, перейдя по ссылке ниже:</p>
-                        <a href="https://t.me/reviews_electric" target="_blank">Перейти</a>
+                        <a href="https://t.me/reviews_electric" target="_blank" class="feedback__link link">Перейти</a>
                     </div>
                     
-                </div>
+                </section>
             </main>
         </div>
 
         <footer class="footer">
-            <div class="contacts">
-                <h2 class="logo all-h">Контакты</h2>
-                <div class="f-contacts-links">
-                    <div class="f-cl-grid">
-                        <div class="f-cl-grid-el">
-                            <a href="https://t.me/FOMA_ELECTRIC" target="_blank" class="f-cl-tg">
-                                <img src="tg.png" alt="Телеграм" class="f-cl-img-a">
+            <section class="contacts margin-bottom-112">
+                <h3 class="contacts__h3">Контакты</h3>
+                <div class="contacts__links">
+                    <div class="contacts__links__grid">
+                        <div class="contacts__links__grid__item">
+                            <a href="https://t.me/FOMA_ELECTRIC" target="_blank" class="contacts__links__grid__item__telegram">
+                                <img src="tg.png" alt="Телеграм" class="contacts__links__grid__item__image width-60">
                             </a>
                         </div>
 
-                        <div class="f-cl-grid-el">
-                            <a class="f-cl-number" href="tel:+79999298309">
-                                <img src="phone.png" class="f-cl-img-a">
+                        <div class="contacts__links__grid__item">
+                            <a class="contacts__links__grid__item__number" href="tel:+79999298309">
+                                <img src="phone.png" class="contacts__links__grid__item__image width-60">
                             </a>
                         </div>
                     </div>
-                    
-                   
                 </div>
-            </div>
-            <div class="footer-data">
-                <a href="https://enotych-bmse.github.io/MikhailAleksandrov/" target="_blank" class="f-d-tg">
+            </section>
+
+            <section class="footer__data text-align-center">
+                <a href="https://enotych-bmse.github.io/MikhailAleksandrov/" target="_blank" class="footer__data__link link">
                     © 2025 Mikhail Aleksandrov
                 </a>
-            </div>
+            </section>
         </footer>
     </body>
 </html>
