@@ -56,6 +56,8 @@
 
 .width-20p {width: 20%;}
 
+.width-50p {width: 50%;}
+
 .width-60 {width: 60px;}
 
 .word-spacing-4 {word-spacing: 0.3rem;}
@@ -106,10 +108,8 @@ body {
     border: var(--border-color);
 }
 
-.contacts__links__grid {grid-template-columns: 1fr 1fr;}
-
 .examples__grid, .instrument__grid, .feedback__grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .examples__img, .examples__link, .feedback__card, .feedback__link {
@@ -130,6 +130,25 @@ body {
 .footer {border-top: 2px solid var(--secondary-color);}
 
 .instrument__ol {list-style: none;}
+
+.contacts__links__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(80px, 120px));
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacts__links__grid__item__image {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.contacts__links__grid__item__number { display: block; }
 
 ol {
     padding: 0 0.6rem;
@@ -152,6 +171,12 @@ li {
     .container { max-width: 90%; }
 }
 
+/* Скрываем кнопку звонка на ПК (мышь/большие экраны) */
+@media (pointer: fine), (min-width: 1025px) {
+    .contacts__links__grid__item__number { display: none; }
+    .contacts__links__grid { grid-template-columns: 1fr; margin: 0; padding: 0;}
+}
+
 /* Планшеты (портретный режим) */
 @media (max-width: 768px) {
     html { font-size: 14px; }
@@ -165,5 +190,9 @@ li {
     html { font-size: 13px; }
     .container { max-width: 95%; }
     .header__h1 { font-size: 3rem; letter-spacing: 0.3rem; }
-    .examples__grid, .feedback__grid { grid-template-columns: 1fr; }
+    .examples__grid { grid-template-columns: 1fr; }
+    .contacts__links__grid {
+        grid-template-columns: 1fr;
+        max-width: 150px;
+    }
 }
